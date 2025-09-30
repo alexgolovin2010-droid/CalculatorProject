@@ -19,7 +19,7 @@ def calc_simple():
     print(res)
 
     return res
-# def calc_extended():
+
 def calc_radians():
     """Задание 4. Тригонометрический калькулятор (Радианы)"""
     """Зависимости: модуль math"""
@@ -125,7 +125,7 @@ def main():
             case 1:
                 calc_simple()
             case 2:
-                break
+                print('В разработке...')
                 #calc_extended()
             # case 3:
                 # НЕ БУДЕТ
