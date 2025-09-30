@@ -19,8 +19,7 @@ def calc_simple():
     print(res)
 
     return res
-def calc_extended():
-def calc_degrees():
+# def calc_extended():
 def calc_radians():
     """Задание 4. Тригонометрический калькулятор (Радианы)"""
     """Зависимости: модуль math"""
@@ -107,37 +106,36 @@ def check_brackets():
 
     print("ДА" if count == 0 else "НЕТ")
 
-check_brackets()
-
-
 
 def main():
     while 1:
+        print()
         print('Привет! Это простой калькулятор на языке Python. Какое действие вы хотите выполнить?')
         print('1 - Простые операции')
         print('2 - Расширенные операции')
-        print('3 - Тригонометрические действия с градусами')
-        print('4 - Тригонометрические действия с радианами')
-        print('5 - Логические операции')
-        print('6 - Перевод чисел в различные СС')
-        print('7 - Проверка скобок')
+        ## print('3 - Тригонометрические действия с градусами')
+        print('3 - Тригонометрические действия с радианами')
+        print('4 - Логические операции')
+        print('5 - Перевод чисел в различные СС')
+        print('6 - Проверка скобок')
         print('0 - Выход')
         choice = int(input())
-        print('/n')
+        print()
         match choice:
             case 1:
                 calc_simple()
             case 2:
-                calc_extended()
+                break
+                #calc_extended()
+            # case 3:
+                # НЕ БУДЕТ
             case 3:
-                calc_degrees()
-            case 4:
                 calc_radians()
-            case 5:
+            case 4:
                 calc_logic()
-            case 6:
+            case 5:
                 menu_logic()
-            case 7:
+            case 6:
                 check_brackets()
             case 0:
                 print('Спасибо, что воспользовались нашим приложением!')
