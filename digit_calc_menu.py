@@ -1,4 +1,5 @@
 import calc_func
+import os  
 
 def digit_calc_menu():
     while 1:
@@ -18,7 +19,7 @@ def digit_calc_menu():
         print(separator)
         match choice:
             case 1:
-                result = calc_func.calc_simple()
+                result = calc_func.calc_simple_adv()
             case 2:
                 result = calc_func.calc_extended()
             case 3:
@@ -36,4 +37,6 @@ def digit_calc_menu():
                 break
             case _:
                 print('Что-то пошло не по плану, проверьте правильность ввода')
-        print()
+        print('Ответ:', result)
+        os.system('cls')  
+    
