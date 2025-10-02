@@ -1,5 +1,5 @@
 import math
-
+from colorama import Fore, Back, Style
 
 def is_number(s):
     try:
@@ -59,29 +59,78 @@ def calc_simple_adv():
         calc_simple_adv()
     
     return eval(f"{num1}{operation}{num2}")
-          
-# Секция в разработке
-"""
 def calc_extended():
-def calc_degrees():
-"""
+    print('Какое действие вы хотите выполнить?')
+    print('1 - Возвести число в степень n')
+    print('2 - Найти остаток от деления')
+    print('3 - Посчитать корень степени n')
+    choice = int(input('Ваш выбор: '))
+    match choice:
+        case 1:
+            while 1:
+                try:
+                    print('Доступен ввод чисел с плавающей ТОЧКОЙ')
+                    a = float(input('Введите основание степени: '))
+                    n = float(input('Введите показатель степени: '))
+                    return pow(a, n)
+                except ValueError:
+                    print(Fore.RED + 'Некорректный ввод. Проверьте соблюдение правил и попробуйте снова')
+                    print(Style.RESET_ALL)
 
+        case 2:
+            while 1:
+                try:
+                    print('Доступен ввод чисел с плавающей точкой')
+                    num1 = float(input('Введите делимое: '))
+                    num2 = float(input('Введите делитель: '))
+                    return num1 % num2
+                except ValueError:
+                        print(Fore.RED + 'Некорректный ввод. Проверьте соблюдение правил и попробуйте снова')
+                        print(Style.RESET_ALL)
+        case 3:
+            while 1:
+                try:
+                    print('Доступен ввод чисел с плавающей точкой')
+                    a = float(input('Введите подкоренное число: '))
+                    n = float(input('Введите показатель корня: '))
+                    return pow(a, (1/n))
+                except:
+                    print(Fore.RED + 'Некорректный ввод. Проверьте соблюдение правил и попробуйте снова')
+                    print(Style.RESET_ALL)
+        case _:
+            print(Fore.RED + 'Некорректный ввод. Попробуйте снова')
+            print(Style.RESET_ALL)
+            calc_extended()
+def calc_degrees():
+    """Задание 4. Тригонометрический калькулятор (Радианы)"""
+    """Зависимости: модуль math"""
+
+    operation = input("Введите операцию (sin или cos): ")
+    degrees = float(input("Введите угол в радианах: "))
+    degrees = math.radians(degrees)
+    match operation:
+        case 'sin' | 'Sin' | 'SIN':
+            return math.sin(degrees)
+        case 'cos' | 'Cos' | 'COS':
+            return math.cos(degrees)
+        case _:
+            print('Произошла ошибка, попробуйте снова')
+            calc_degrees()
 def calc_radians():
     """Задание 4. Тригонометрический калькулятор (Радианы)"""
     """Зависимости: модуль math"""
 
-    while 1:
-        operation = input("Введите операцию (sin или cos): ")
-        degrees = float(input("Введите угол в радианах: "))
+    operation = input("Введите операцию (sin или cos): ")
+    degrees = float(input("Введите угол в радианах: "))
 
-        match operation:
-            case 'sin' | 'Sin' | 'SIN':
-                return math.sin(degrees)
-            case 'cos' | 'Cos' | 'COS':
-                return math.cos(degrees)
-            case _:
-                print('Произошла ошибка, попробуйте снова')
-                return
+    match operation:
+        case 'sin' | 'Sin' | 'SIN':
+            return math.sin(degrees)
+        case 'cos' | 'Cos' | 'COS':
+            return math.cos(degrees)
+        case _:
+            print('Произошла ошибка, попробуйте снова')
+            return
 def calc_logic():
     print('Введите действие')
     print('1 - and')
