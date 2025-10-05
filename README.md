@@ -1,16 +1,14 @@
-## Что это такое
-Это простой консольный калькулятор на Python, написаный группой по промышленному программированию номер S101
+<div align=center>
+    <h1>CalculatorProject</h1>
+    <p>A simple calculator that works in the console.</p>
+</div>
 
-## Планы
-  1. Переписать функции и привести их к единому формату вывода
-  2. Написать отсутствующие функции
-  3. Собрать программу полностью
-  4. В перспективе сделать графичесий интерфейс
-
-## Кто работал над проектом
- - Головин Алексей
-
-_В этот список будут добавлен каждый желающий из списка контрибьюторов_
-
-## Важное
-Если вы по какой-то не имеете доступа к ТЗ, то напишите мне об этом, и я предоставлю вам файл
+# Installation
+## Building from source:
+1. Clone the repository
+```bash
+git clone https://github.com/alexgolovin2010-droid/CalculatorProject.git
+```
+2. Create an executable file or run python files
+## Releases:
+1. Use ready-made executable files
