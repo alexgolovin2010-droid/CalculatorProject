@@ -32,7 +32,7 @@ class Format:
         @staticmethod
         def red(text: str) -> str:
             """Function for create red text"""
-            res = "\033[32m{}\033[0m".format(text)
+            res = "\033[31m{}\033[0m".format(text)
             return res
 
         @staticmethod
