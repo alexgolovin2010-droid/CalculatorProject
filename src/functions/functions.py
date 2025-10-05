@@ -3,6 +3,7 @@ from .extended import calc_extended
 from .degrees import calc_degrees
 from .radians import calc_radians
 from .logic import calc_logic
+from .number_systems import menu_number_systems
 
 def functions():
     """
@@ -15,7 +16,8 @@ def functions():
             "Расширенные операции": calc_extended,
             "Тригонометрические действия с градусами": calc_degrees,
             "Тригонометрические действия с радианами": calc_radians,
-            "Логические операции": calc_logic
+            "Логические операции": calc_logic,
+            "Перевод чисел в различные СС": menu_number_systems
     }
 
     return functions
