@@ -15,7 +15,7 @@ def custom_input(prompt: str, type=None, options=[], not_equal=None):
     
         if options != []:
             if value not in options:
-                print(Format.Style.bold(Format.Color.red("ОШИБКА: ")) + "Выберите один из допустимых вариантов: " + str(*options))
+                print(Format.Style.bold(Format.Color.red("ОШИБКА: ")) + "Выберите один из допустимых вариантов: " + ' '.join(map(str, options)))
                 continue
         
         if value == not_equal:
