@@ -18,7 +18,7 @@ def custom_input(prompt: str, type=None, options=[], not_equal=None):
                 print(Format.Style.bold(Format.Color.red("ОШИБКА: ")) + "Выберите один из допустимых вариантов: " + str(*options))
                 continue
         
-        if value != not_equal:
+        if value == not_equal:
             print(Format.Style.bold(Format.Color.red("ОШИБКА: ")) + "Запрещено использование этого значения")
             continue
 
