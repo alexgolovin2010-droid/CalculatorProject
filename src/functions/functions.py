@@ -1,4 +1,5 @@
 from .simple import calc_simple
+from .extended import calc_extended
 
 def functions():
     """
@@ -7,7 +8,8 @@ def functions():
     """
 
     functions = {
-            "Простые операции": calc_simple
+            "Простые операции": calc_simple,
+            "Расширенные операции": calc_extended
     }
 
     return functions
