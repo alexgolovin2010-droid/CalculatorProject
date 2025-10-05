@@ -1,5 +1,7 @@
 from .simple import calc_simple
 from .extended import calc_extended
+from .degrees import calc_degrees
+from .radians import calc_radians
 
 def functions():
     """
@@ -9,7 +11,9 @@ def functions():
 
     functions = {
             "Простые операции": calc_simple,
-            "Расширенные операции": calc_extended
+            "Расширенные операции": calc_extended,
+            "Тригонометрические действия с градусами": calc_degrees,
+            "Тригонометрические действия с радианами": calc_radians
     }
 
     return functions
