@@ -17,8 +17,8 @@ def main_menu():
     functions_list = functions.functions()
 
     menu(functions_list, numbered=True, start=1)
-
-    choice = custom_input("Введите номер функции: ", type=int, options=[1])
+    
+    choice = custom_input("Введите номер функции: ", type=int, options=range(1, len(functions_list)+1))
     functions_list = list(functions_list.items())
     func = functions_list[choice - 1][1]
 
