@@ -6,6 +6,7 @@ from .input import custom_input
 from .output import custom_output
 
 import functions
+from localization import loc
 
 
 def main_menu():
@@ -13,12 +14,17 @@ def main_menu():
     
     print(Format.Style.bold("CalculatorProject"))
 
-    print("Функции:")
+    print(loc("main_menu_title"))
     functions_list = functions.functions()
 
     menu(functions_list, numbered=True, start=1)
     
-    choice = custom_input("Введите номер функции: ", type=int, options=range(1, len(functions_list)+1))
+    choice = custom_input(
+        loc("main_menu_input"),
+        type=int,
+        options=range(1, len(functions_list)+1)
+    )
+
     functions_list = list(functions_list.items())
     func = functions_list[choice - 1][1]
 
