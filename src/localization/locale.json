@@ -39,5 +39,47 @@
 		"calc_radians": "Тригонометрические действия с радианами",
 		"calc_logic": "Логические операции",
 		"menu_number_systems": "Перевод чисел в различные СИ"
+	},
+
+	"en_US": {
+   		"main_menu_title": "Functions:",
+    	"main_menu_input": "Enter function number: ",
+
+    	"output_result": "Result: ",
+
+    	"error": "ERROR: ",
+    	"invalid_format": "Invalid input format",
+    	"invalid_option": "Please select one of the allowed options: ",
+    	"invalid_choice": "This value is not allowed",
+
+    	"action_input": "Enter action number: ",
+
+    	"num_input": "Enter a number: ",
+    	"first_num_input": "Enter the first number: ",
+    	"second_num_input": "Enter the second number: ",
+    	"operator_input": "Enter an operator: ",
+
+    	"input_devisible_num": "Enter the dividend: ",
+    	"input_divider": "Enter the divisor: ",
+
+    	"pow_input": "Enter the exponent: ",
+
+    	"radians_input": "Enter the angle in radians: ",
+    	"degrees_input": "Enter the angle in degrees: ",
+
+    	"action_exponentiation": "Exponentiation",
+    	"action_modulo": "Modulo operation",
+    	"action_sqrt": "Square root calculation",
+
+    	"action_dec_to_bin": "Decimal to Binary",
+    	"action_dec_to_hex": "Decimal to Hexadecimal",
+    	"action_dec_to_oct": "Decimal to Octal",
+
+   	 	"calc_simple": "Simple operations",
+   	 	"calc_extended": "Extended operations",
+   	 	"calc_degrees": "Trigonometric functions in degrees",
+    	"calc_radians": "Trigonometric functions in radians",
+    	"calc_logic": "Logical operations",
+    	"menu_number_systems": "Convert numbers between different numeral systems"
 	}
 }
