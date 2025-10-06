@@ -38,7 +38,10 @@
 		"calc_degrees": "Тригонометрические действия с градусами",
 		"calc_radians": "Тригонометрические действия с радианами",
 		"calc_logic": "Логические операции",
-		"menu_number_systems": "Перевод чисел в различные СИ"
+		"menu_number_systems": "Перевод чисел в различные СИ",
+		"about_page": "О проекте",
+
+		"text_about_page": "CalculatorProject - учебный проект группы S101, а это его модифицированная версия.\nИсходный код проекта доступен на репозитории GitHub - https://github.com/alexgolovin2010-droid/CalculatorProject/"
 	},
 
 	"en_US": {
@@ -80,6 +83,9 @@
    	 	"calc_degrees": "Trigonometric functions in degrees",
     	"calc_radians": "Trigonometric functions in radians",
     	"calc_logic": "Logical operations",
-    	"menu_number_systems": "Convert numbers between different numeral systems"
+    	"menu_number_systems": "Convert numbers between different numeral systems",
+		"about_page": "About the project",
+
+		"text_about_page": "CalculatorProject is a S101 class project, and this is a modified version of it.\nThe project's source code is available in the GitHub repository - https://github.com/alexgolovin2010-droid/CalculatorProject/"
 	}
 }
