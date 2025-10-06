@@ -4,6 +4,7 @@ from .degrees import calc_degrees
 from .radians import calc_radians
 from .logic import calc_logic
 from .number_systems import menu_number_systems
+from .about import about
 from localization import loc
 
 def functions():
@@ -18,7 +19,8 @@ def functions():
             loc("calc_degrees"): calc_degrees,
             loc("calc_radians"): calc_radians,
             loc("calc_logic"): calc_logic,
-            loc("menu_number_systems"): menu_number_systems
+            loc("menu_number_systems"): menu_number_systems,
+            loc("about_page"): about
     }
 
     return functions
