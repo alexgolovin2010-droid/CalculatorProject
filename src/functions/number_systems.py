@@ -1,10 +1,11 @@
 import interface
+from localization import loc
 
 def menu_number_systems():
     """Menu for selecting actions with calculus siestas"""
 
-    interface.menu(["10CИ -> 2CИ", "10CИ -> 16CИ", "10CИ -> 8CИ"])
-    choice = interface.input("Выберите действие: ", type=int, options=[1, 2, 3])
+    interface.menu([loc("action_dec_to_bin"), loc("action_dec_to_hex"), loc("action_dec_to_oct")])
+    choice = interface.input(loc("action_input"), type=int, options=[1, 2, 3])
 
     match choice:
         case 1:
@@ -19,18 +20,18 @@ def menu_number_systems():
 
 def calc_10_2():
     """Conversion from base 10 to base 2"""
-    a = interface.input("Введите число: ", type=int)
+    a = interface.input(loc("num_input"), type=int)
 
     return bin(a)
 
 def calc_10_16():
     """Conversion from base 10 to base 16"""
-    a = interface.input("Введите число: ", type=int)
+    a = interface.input(loc("num_input"), type=int)
 
     return hex(a)
 
 def calc_10_8():
     """Conversion from base 10 to base 8"""
-    a = interface.input("Введите число: ", type=int)
+    a = interface.input(loc("num_input"), type=int)
 
     return oct(a)
