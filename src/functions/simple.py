@@ -1,12 +1,13 @@
 import interface
 import math
+from localization import loc
 
 def calc_simple() -> float:
     """Function for simple calculations"""
 
-    a = interface.input("Введите первое число: ", type=int)
-    b = interface.input("Введите второе число: ", type=int)
-    operator = interface.input("Введите оператор: ", type=str, options=['+', '-', '*', '/'])
+    a = interface.input(loc("first_num_input"), type=int)
+    b = interface.input(loc("second_num_input"), type=int)
+    operator = interface.input(loc("operator_input"), type=str, options=['+', '-', '*', '/'])
 
     res = float(eval(str(a) + operator + str(b)))
 

@@ -4,6 +4,7 @@ from .degrees import calc_degrees
 from .radians import calc_radians
 from .logic import calc_logic
 from .number_systems import menu_number_systems
+from localization import loc
 
 def functions():
     """
@@ -12,12 +13,12 @@ def functions():
     """
 
     functions = {
-            "Простые операции": calc_simple,
-            "Расширенные операции": calc_extended,
-            "Тригонометрические действия с градусами": calc_degrees,
-            "Тригонометрические действия с радианами": calc_radians,
-            "Логические операции": calc_logic,
-            "Перевод чисел в различные СС": menu_number_systems
+            loc("calc_simple"): calc_simple,
+            loc("calc_extended"): calc_extended,
+            loc("calc_degrees"): calc_degrees,
+            loc("calc_radians"): calc_radians,
+            loc("calc_logic"): calc_logic,
+            loc("menu_number_systems"): menu_number_systems
     }
 
     return functions
