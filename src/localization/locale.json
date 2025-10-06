@@ -1,0 +1,91 @@
+{
+	"ru_RU": {
+		"main_menu_title": "Функции:",
+		"main_menu_input": "Введите номер функции: ",
+
+		"output_result": "Результат: ",
+
+		"error": "ОШИБКА: ",
+		"invalid_format": "Неверный формат ввода",
+		"invalid_option": "Выберите один из допустимых вариантов: ",
+		"invalid_choice": "Запрещено использование этого значения",
+
+		"action_input": "Введите номер действия: ",
+			
+		"num_input": "Введите число: ",
+		"first_num_input": "Введите первое число: ",
+		"second_num_input": "Введите второе число: ",
+		"operator_input": "Введите оператор: ",
+
+		"input_devisible_num": "Введите делимое число: ",
+		"input_divider": "Введите делитель: ",
+
+		"pow_input": "Введите степень: ",
+
+		"radians_input": "Введите угол в радианах: ",
+		"degrees_input": "Введите угол в градусах: ",
+
+		"action_exponentiation": "Возведение в степень",
+		"action_modulo": "Остаток от деления",
+		"action_sqrt": "Нахождение корня",
+
+		"action_dec_to_bin": "10СИ -> 2СИ",
+		"action_dec_to_hex": "10СИ -> 16СИ",
+		"action_dec_to_oct": "10СИ -> 8СИ",
+
+		"calc_simple": "Простые операции",
+		"calc_extended": "Расширенные операции",
+		"calc_degrees": "Тригонометрические действия с градусами",
+		"calc_radians": "Тригонометрические действия с радианами",
+		"calc_logic": "Логические операции",
+		"menu_number_systems": "Перевод чисел в различные СИ",
+		"about_page": "О проекте",
+
+		"text_about_page": "CalculatorProject - учебный проект группы S101, а это его модифицированная версия.\nИсходный код проекта доступен на репозитории GitHub - https://github.com/alexgolovin2010-droid/CalculatorProject/"
+	},
+
+	"en_US": {
+   		"main_menu_title": "Functions:",
+    	"main_menu_input": "Enter function number: ",
+
+    	"output_result": "Result: ",
+
+    	"error": "ERROR: ",
+    	"invalid_format": "Invalid input format",
+    	"invalid_option": "Please select one of the allowed options: ",
+    	"invalid_choice": "This value is not allowed",
+
+    	"action_input": "Enter action number: ",
+
+    	"num_input": "Enter a number: ",
+    	"first_num_input": "Enter the first number: ",
+    	"second_num_input": "Enter the second number: ",
+    	"operator_input": "Enter an operator: ",
+
+    	"input_devisible_num": "Enter the dividend: ",
+    	"input_divider": "Enter the divisor: ",
+
+    	"pow_input": "Enter the exponent: ",
+
+    	"radians_input": "Enter the angle in radians: ",
+    	"degrees_input": "Enter the angle in degrees: ",
+
+    	"action_exponentiation": "Exponentiation",
+    	"action_modulo": "Modulo operation",
+    	"action_sqrt": "Square root calculation",
+
+    	"action_dec_to_bin": "Decimal to Binary",
+    	"action_dec_to_hex": "Decimal to Hexadecimal",
+    	"action_dec_to_oct": "Decimal to Octal",
+
+   	 	"calc_simple": "Simple operations",
+   	 	"calc_extended": "Extended operations",
+   	 	"calc_degrees": "Trigonometric functions in degrees",
+    	"calc_radians": "Trigonometric functions in radians",
+    	"calc_logic": "Logical operations",
+    	"menu_number_systems": "Convert numbers between different numeral systems",
+		"about_page": "About the project",
+
+		"text_about_page": "CalculatorProject is a S101 class project, and this is a modified version of it.\nThe project's source code is available in the GitHub repository - https://github.com/alexgolovin2010-droid/CalculatorProject/"
+	}
+}

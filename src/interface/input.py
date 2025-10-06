@@ -1,4 +1,5 @@
 from .utils import Format
+from localization import loc
 
 def custom_input(prompt: str, type=None, options=[], not_equal=None):
     """Custom input function for project"""
@@ -10,16 +11,16 @@ def custom_input(prompt: str, type=None, options=[], not_equal=None):
             try:
                 value = type(value)
             except ValueError:
-                print(Format.Style.bold(Format.Color.red("ОШИБКА: ")) + "Неверный формат ввода")
+                print(Format.Style.bold(Format.Color.red(loc("error")) + loc("invalid_format")))
                 continue
     
         if options != []:
             if value not in options:
-                print(Format.Style.bold(Format.Color.red("ОШИБКА: ")) + "Выберите один из допустимых вариантов: " + ' '.join(map(str, options)))
+                print((Format.Style.bold(Format.Color.red(loc("error"))) + loc("invalid_option") + ' '.join(map(str, options))))
                 continue
         
         if value == not_equal:
-            print(Format.Style.bold(Format.Color.red("ОШИБКА: ")) + "Запрещено использование этого значения")
+            print((Format.Style.bold(Format.Color.red(loc("error"))) + loc("invalid_choice")))
             continue
 
         return value
