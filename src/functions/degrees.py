@@ -1,12 +1,13 @@
 import math
 import interface
+from localization import loc
 
 def calc_degrees() -> float:
     """TASK 3: Function for calculating sine/cosine from a degree angle"""
 
     interface.menu(["sin()", "cos()"])
-    choice = interface.input("Выберите действие: ", type=int, options=[1, 2])
-    angle = interface.input("Введите угол в градусах: ", type=int)
+    choice = interface.input(loc("action_input"), type=int, options=[1, 2])
+    angle = interface.input(loc("degrees_input"), type=int)
 
     match choice:
         case 1:
