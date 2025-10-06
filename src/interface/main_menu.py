@@ -29,7 +29,8 @@ def main_menu():
     func = functions_list[choice - 1][1]
 
     res = func()
-    custom_output(res)
+    if res:
+        custom_output(res)
 
 
 
