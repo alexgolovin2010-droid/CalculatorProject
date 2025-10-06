@@ -8,7 +8,7 @@ def calc_radians() -> float:
     interface.menu(["sin()", "cos()"])
     choice = interface.input(loc("action_input"), type=int, options=[1, 2])
 
-    radian = interface.input(loc("degrees_input"), type=int)
+    radian = interface.input(loc("radians_input"), type=int)
     angle = math.pi / 6
 
     match choice:
