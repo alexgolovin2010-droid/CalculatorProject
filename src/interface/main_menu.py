@@ -31,6 +31,7 @@ def main_menu():
     res = func()
     if res:
         custom_output(res)
+        print('\n')
 
 
 
