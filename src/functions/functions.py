@@ -5,6 +5,7 @@ from .radians import calc_radians
 from .logic import calc_logic
 from .number_systems import menu_number_systems
 from .about import about
+from .exit import exit_programm
 from localization import loc
 
 def functions():
@@ -20,7 +21,8 @@ def functions():
             loc("calc_radians"): calc_radians,
             loc("calc_logic"): calc_logic,
             loc("menu_number_systems"): menu_number_systems,
-            loc("about_page"): about
+            loc("about_page"): about,
+            loc("exit"): exit_programm
     }
 
     return functions
